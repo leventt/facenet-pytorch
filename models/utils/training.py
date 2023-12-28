@@ -69,7 +69,7 @@ def pass_epoch(
     Arguments:
         model {torch.nn.Module} -- Pytorch model.
         loss_fn {callable} -- A function to compute (scalar) loss.
-        loader {torch.utils.data.DataLoader} -- A pytorch data loader.
+        loader {torch.common.data.DataLoader} -- A pytorch data loader.
     
     Keyword Arguments:
         optimizer {torch.optim.Optimizer} -- A pytorch optimizer.
@@ -80,7 +80,7 @@ def pass_epoch(
         show_running {bool} -- Whether or not to print losses and metrics for the current batch
             or rolling averages. (default: {False})
         device {str or torch.device} -- Device for pytorch to use. (default: {'cpu'})
-        writer {torch.utils.tensorboard.SummaryWriter} -- Tensorboard SummaryWriter. (default: {None})
+        writer {torch.common.tensorboard.SummaryWriter} -- Tensorboard SummaryWriter. (default: {None})
     
     Returns:
         tuple(torch.Tensor, dict) -- A tuple of the average loss and a dictionary of average

@@ -25,7 +25,7 @@ setuptools.setup(
     packages=[
         'facenet_pytorch',
         'facenet_pytorch.models',
-        'facenet_pytorch.models.utils',
+        'facenet_pytorch.models.common',
         'facenet_pytorch.data',
     ],
     package_dir={'facenet_pytorch':'.'},
